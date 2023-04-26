@@ -18,11 +18,11 @@ class pass1 {
     public static void main(String args[]) throws Exception {
         int loc = -1;
         int z = -1;
-        File file = new File(System.getProperty("user.dir") + "\\text.txt");
+        File file = new File(System.getProperty("user.dir") + "\\Desktop\\SPCC\\11. Pass 2 & Count\\text.txt");
         BufferedReader br = new BufferedReader(new FileReader(file));
         String st;
 
-        PrintStream out = new PrintStream(new File("new.txt"));
+        PrintStream out = new PrintStream(new File("ic.txt"));
         PrintStream console = System.out;
         System.setOut(out);
 
@@ -96,7 +96,7 @@ class pass1 {
         System.setOut(console);
 
 
-        File file1 = new File("C:\\Users\\PC-13\\Desktop\\56\\new.txt");
+        File file1 = new File(System.getProperty("user.dir") + "\\ic.txt");
         br.close();
         br = new BufferedReader(new FileReader(file1));
         
